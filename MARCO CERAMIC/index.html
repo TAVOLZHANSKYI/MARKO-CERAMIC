@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/kitchn.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>MARKO CERAMIC</title>
+</head>
+<body>
+	<header id="header" class="header"> 
+		<div class="menu">
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">Главноя</a>
+			  <a href="#">Каталог</a>
+			  <a href="#">О нас</a>
+			  <a href="#">Контакты</a>
+			</div>
+			<span onclick="openNav()">&#9776;</span>
+
+			<div id="myOverlay" class="overlay animate">
+			  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+			  <div class="overlay-content">
+			    <form >
+			      <input type="text" placeholder="Search.." name="search" required>
+			      <button type="submit"><i class="fa fa-search"></i></button>
+			    </form>
+			  </div>
+			</div>
+
+			<button class="openBtn" onclick="openSearch()"><img src="img/search.png" alt="img"></button>
+		</div>
+
+		<div class="logo">
+			<img src="img/logo.png" alt="img" title="MARKO CERAMIC">
+		</div>
+
+		<div class="more">
+			<a href="#" class="let" id="flip"><img src="img/tel.png" alt="img"></a>
+			<a href="#" class="let all" onclick="document.getElementById('id01').style.display='block'"><img src="img/user.png" alt="img"></a>
+			<a href="#" class="let"><img src="img/shop.png" alt="img"></a>
+		</div>
+	</header>
+
+	<section id="detale" class="detale">
+		<div id="panel">
+			<div class="pramel-tel">
+				<p>
+				   tel: 000-000-000
+				</p>
+				<p>
+					tel: 000-000-000
+				</p>
+				<p>
+					tel: 000-000-000
+				</p>
+			</div>
+		</div>
+
+		<div id="id01" class="modal animate">
+		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		    <form class="modal-content" action="/action_page.php">
+			    <div class="container">
+			      <h1>Подписаться</h1>
+			      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+			      <hr>
+			      <label for="email"><b>Эл. адрес</b></label>
+			      <input type="text" placeholder="Enter Email" name="email" required>
+
+			      <label for="psw"><b>Пароль</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" required>
+
+			      <label for="psw-repeat"><b>Повторите пароль</b></label>
+			      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			      
+			      <label>
+			        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Запомни меня
+			      </label>
+
+			      <p>Создав учетную запись, вы соглашаетесь с нашими<a href="#" style="color:dodgerblue">Условиями и Конфиденциальностью .</a>.</p>
+
+			      <div class="clearfix">
+			        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+			        <button type="submit" class="signupbtn">Подписаться</button>
+			      </div>
+			    </div>
+		    </form>
+		</div>
+	</section>
+
+		
+	<section id="tabs" class="tabs">
+		<div class="tabs-header">
+			<div class="tab-h activ" data-tab="0"> 
+				<img src="img/decor.png" alt="img" class="images"><br>
+				Декор
+			</div>
+			<div class="tab-h" data-tab="1">
+				<img src="img/kitchn.png" alt="img" class="images"><br>
+				Кухня
+			</div>
+			<div class="tab-h" data-tab="2">
+				<img src="img/lepka.png" alt="img" class="images"><br>
+				Лепка ручной <br> работы
+			</div>
+			<div class="tab-h" data-tab="3">
+				<img src="img/vine.png" alt="img" class="images"><br>
+				Винные наборы
+			</div>
+			<div class="tab-h" data-tab="4">
+				<img src="img/stone.png" alt="img" class="images"><br>
+				Sotone ceramic
+			</div>
+			<div class="tab-h" data-tab="5">
+				<img src="img/sales.png" alt="img" class="images"><br>
+				Акции и <br> спецпредложения
+			</div>
+		</div>
+
+		<div class="tabs-body">
+			<div class="tab-b" style="display: block">1</div>
+			<div class="tab-b">2</div>
+			<div class="tab-b">3</div>
+			<div class="tab-b">4</div>
+			<div class="tab-b">5</div>
+			<div class="tab-b">6</div>
+		</div>
+	</section>
+
+	<section id="feature" class="feature">
+		<div class="text">
+		 	<h1>Керамика</h1>
+		 	<h3>для кухни</h3> 
+		 	<a href="#" class="btn">ОЗНАКОМИТЬСЯ</a>
+		</div>
+
+		<div class="parallax"></div>
+
+		<section id="section05" class="demo">
+		  <a href="#slider" id="demo"><span></span>Scroll</a>
+		</section>
+	</section>
+
+	<section id="slider" class="slider">
+		<h2 class="title">НОВИНКИ</h2>
+	    <div id="polosa">
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    </div>
+	</section>
+	<button class="btn-i" id="sliderleft">NEXT</button>
+	
+	<h2 class="title">О КОМПАННИ</h2>
+	<section id="holder" class="holder">
+		<div class="promo">
+			<div class="promo-img">
+				<img src="img/bowl.png" alt="img" style="width: 100%;">
+			</div>
+			<div class="promo-text">
+
+				<p class="pt">
+					<strong>Мы знаем толкв керамике</strong><br><br>
+					Производство керамики – это процесс, известный с давних времен, который заключается в создании большого ряда продукции преимущественно из естественных глин, в частности, в сочетании с добавками минеральной и органической природы.
+				</p>
+			
+				<img src="img/jug.png" alt="img">
+
+				<div class="ht">
+					<li>Лучшее сырье</li>
+					<li>качество</li>
+					<li>ассортимент</li>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="samll" class="small">
+		<div class="small-text">
+			<p class="st">Получите подарок</p>
+			<p class="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			</p>
+			<a href="#" class="link">ОЗНАКОМИТЬСЯ</a>
+		</div>
+		<div>
+			<p></p>
+		</div>
+	</section>
+
+    <h2 class="title">АКЦИИ</h2>
+	<section id="slider" class="slider">
+	    <div id="polosa2">
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    	<div class="img">
+	    	  <img src="img/Ceramic.png" alt="" style="width: 100%;">
+	    	    <div class="container">
+	    	       <button class="block-shop">В КОРЗИНУ <img src="img/shop2.png" alt="img"></button>
+	    	    </div>
+	    	  <h4>Винный кувшин</h4>
+	    	  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+			  <span class="fa fa-star checked"></span>
+	    	  <p>112 грн</p>
+	    	</div>
+	    </div>
+	</section>
+	<button class="btn-i" id="sliderleftt">NEXT</button>
+
+
+	<footer id="footer" class="footer">
+		<div class="footer-menu">
+			<a href="#"><li>Главноя</li></a>
+			<a href="#"><li>Каталог</li></a>
+			<a href="#"><li>О нас</li></a>
+			<a href="#"><li>Контакты</li></a>
+		</div>
+		<div class="footer-content">
+			<div class="icon">
+				<h4>Подпишитесь на нас</h4>
+				<a href="#"><img src="img/fb.png" alt="img" title="facebook"></a>
+				<a href="#"><img src="img/ut.png" alt="img" title="YouTube"></a>
+				<a href="#"><img src="img/vk.png" alt="img" title="vk"></a>
+			</div>
+
+			<div class="logo2">
+				<img src="img/logo.png" alt="img" class="logo2-img">
+				<p>Дизайн и разработка</p>
+				<img src="img/Imagineering.png" alt="img" class="company">
+			</div>
+
+			<div class="email">
+				<h4>Подпишитесь <br> на нашу рассылку</h4>
+				<form>
+					<input type="email" placeholder="Ваш Email" name="email" required>
+					<button type="submit" class="email-btn"><i class="fa fa-angle-right"></i></button>
+				</form>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/min.js"></script>
+</body>
+</html>
